@@ -1,12 +1,10 @@
 const changeColorCardButton = document.querySelector('#change-Color-all-card');
-const greenColorHash = '#d9b513';
-const blueColorHash = '#4A90E2';
+const greenColorHash = '#d9b713';
+const blueColorHash = '#4A90E7';
 
 changeColorCardButton.addEventListener('click', () => {
   document.querySelectorAll('.card').forEach((card) => card.style.backgroundColor = greenColorHash)
 })
-
-// покраска первой карточкиs
 
 const firstProductContainers = document.querySelector('.card');
 const changeColorFirstCardButton = document.querySelector('#change-Color-first-card');
@@ -14,8 +12,6 @@ const changeColorFirstCardButton = document.querySelector('#change-Color-first-c
 changeColorFirstCardButton.addEventListener ('click', () => {
   firstProductContainers.style.backgroundColor = blueColorHash
 });
-
-// открытие страницы Google.com
 
 const openGoogleButoon = document.querySelector('#open-google');
 const googleURL = 'https://google.com';
@@ -31,12 +27,11 @@ function openGoogle() {
   }
 }
 
-// вывод консоль лог
 const outputlogButton = document.querySelector('#output-console-log');
   outputlogButton.addEventListener('click', () => outputConsoleLog('дз №6'))
 
 function outputConsoleLog(message) {
    console.log(message);
-   alert('10')
+   alert('buy')
   
 }
