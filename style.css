@@ -31,7 +31,7 @@ color: #515076;
 .container {
   width: 1110px;
   margin: 0 auto;
-  background-image: url(img/bg.png);
+  background-image: url("img/bg-flower.png");
   background-repeat: no-repeat;
   background-position: 85px 0;
 }
@@ -59,7 +59,7 @@ width: 100%;
   font-size: 13px;
   line-height: 18px;
   color: #8C8C8C;
-text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .card__text {
