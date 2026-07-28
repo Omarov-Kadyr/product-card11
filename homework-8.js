@@ -53,6 +53,8 @@ getPropertyValue(car, "color");
 const products = ["bread", "meat", "vegetables"];
 console.log(products);
 
+// массив из книг
+
 const books = [
   {title: "Гарри Поттер и философский камень", author: "Дж.К. Роулинг", year: 1997, coverColor: "green", genre: "фэнтези"},
   {title: "Бойцовский клуб", author: "Чак Паланик", year: 1996, coverColor: "black", genre: "контркультура"},
@@ -60,11 +62,15 @@ const books = [
   {title: "Сумерки", author: "Стефани Майер", year: 2005, coverColor: "black", genre: "романтическое фэнтези"}
 ];
 
+// добавили еще одну книгу
+
 books.push({
   title: "Аватар", author: "Джеймс Кэмерон", year: 2009, coverColor: "blue", genre: "фантастика"
 });
 
 console.log(books);
+
+// добавили еще один массив с книгами Гарри Поттер
 
 const harryPotterUniverse = [
   { title: "Гарри Поттер и Тайная комната", author: "Дж.К. Роулинг", year: 1998, coverColor: "blue", genre: "фэнтези" },
@@ -72,8 +78,12 @@ const harryPotterUniverse = [
   { title: "Фантастические твари и где они обитают", author: "Ньют Саламандер (Дж.К. Роулинг)", year: 2001, coverColor: "gold", genre: "энциклопедия фэнтези" }
 ];
 
+// объеденили два массива
+
 const books2 = [...books, ...harryPotterUniverse];
 console.log(books2);
+
+// добавили функцию, которая берет предыдущий массив и добавили новое свойство редкости книг
 
 function rareBooks(booksArray) {
   return booksArray.map(book => {
