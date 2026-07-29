@@ -11,12 +11,12 @@ body {
 }
 
 .title {
-font-size: 70px;
-font-weight: 400;
-line-height: 78px;
-margin: 0;
-text-align: center;
-color: #515076;
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 78px;
+  margin: 0;
+  text-align: center;
+  color: #515076;
 }
 
 .catalog__title {
@@ -43,9 +43,9 @@ color: #515076;
 }
 
 .card {
-background-color: #F7F7FA;
-padding: 25px;
-width: 100%;
+  background-color: #F7F7FA;
+  padding: 25px;
+  width: 100%;
 }
 
 .card__image {
