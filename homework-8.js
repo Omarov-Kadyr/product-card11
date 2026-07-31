@@ -56,10 +56,18 @@ console.log(products);
 // массив из книг
 
 const books = [
-  {title: "Гарри Поттер и философский камень", author: "Дж.К. Роулинг", year: 1997, coverColor: "green", genre: "фэнтези"},
-  {title: "Бойцовский клуб", author: "Чак Паланик", year: 1996, coverColor: "black", genre: "контркультура"},
-  {title: "Код да Винчи", author: "Дэн Браун", year: 2003, coverColor: "brown", genre: "детективный роман"},
-  {title: "Сумерки", author: "Стефани Майер", year: 2005, coverColor: "black", genre: "романтическое фэнтези"}
+  {
+    title: "Гарри Поттер и философский камень", author: "Дж.К. Роулинг", year: 1997, coverColor: "green", genre: "фэнтези"
+  },
+  {
+    title: "Бойцовский клуб", author: "Чак Паланик", year: 1996, coverColor: "black", genre: "контркультура"
+  },
+  {
+    title: "Код да Винчи", author: "Дэн Браун", year: 2003, coverColor: "brown", genre: "детективный роман"
+  },
+  {
+    title: "Сумерки", author: "Стефани Майер", year: 2005, coverColor: "black", genre: "романтическое фэнтези"
+  },
 ];
 
 // добавили еще одну книгу
@@ -72,10 +80,17 @@ console.log(books);
 
 // добавили еще один массив с книгами Гарри Поттер
 
-const harryPotterUniverse = [
-  { title: "Гарри Поттер и Тайная комната", author: "Дж.К. Роулинг", year: 1998, coverColor: "blue", genre: "фэнтези" },
-  { title: "Гарри Поттер и узник Азкабана", author: "Дж.К. Роулинг", year: 1999, coverColor: "purple", genre: "фэнтези" },
-  { title: "Фантастические твари и где они обитают", author: "Ньют Саламандер (Дж.К. Роулинг)", year: 2001, coverColor: "gold", genre: "энциклопедия фэнтези" }
+const harryPotterUniverse =
+[
+  {
+    title: "Гарри Поттер и Тайная комната", author: "Дж.К. Роулинг", year: 1998, coverColor: "blue", genre: "фэнтези"
+  },
+  {
+    title: "Гарри Поттер и узник Азкабана", author: "Дж.К. Роулинг", year: 1999, coverColor: "purple", genre: "фэнтези"
+  },
+  {
+    title: "Фантастические твари и где они обитают", author: "Ньют Саламандер (Дж.К. Роулинг)", year: 2001, coverColor: "gold", genre: "энциклопедия фэнтези"
+  },
 ];
 
 // объеденили два массива
