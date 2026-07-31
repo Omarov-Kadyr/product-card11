@@ -100,7 +100,7 @@ console.log(books2);
 
 // добавили функцию, которая берет предыдущий массив и добавили новое свойство редкости книг
 
-function rareBooks(booksArray) {
+function getRareBooks(booksArray) {
   return booksArray.map(book => {
     return {
       ...book,
@@ -109,5 +109,5 @@ function rareBooks(booksArray) {
   });
 }
 
-const updatedBooks = rareBooks(books2);
+const updatedBooks = getRareBooks(books2);
 console.log(updatedBooks);
