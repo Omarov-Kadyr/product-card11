@@ -1,0 +1,72 @@
+export const socialMediaComments = [
+  {
+    id: 1,
+    postId: 13,
+    username: "alex_pro",
+    email: "Eliseo@gardner.biz",
+    body: "Отличный пост! Полностью согласен с автором.",
+  },
+  {
+    id: 2,
+    postId: 15,
+    username: "elena_k",
+    email: "Jayne_Kuhic@sydney.com",
+    body: "А мне кажется, здесь не всё так однозначно. Нужно учитывать контекст.",
+  },
+  {
+    id: 3,
+    postId: 10,
+    username: "tech_guru",
+    email: "Nikita@garfield.biz",
+    body: "Качественный разбор кода. Спасибо за полезный материал!",
+  },
+  {
+    id: 4,
+    postId: 15,
+    username: "junior_dev",
+    email: "Lew@alysha.tv",
+    body: "Подскажите, а этот метод будет работать в старых браузерах?",
+  },
+  {
+    id: 5,
+    postId: 53,
+    username: "traveler_99",
+    email: "Hayden@althea.biz",
+    body: "Фотографии просто нереальные! Какая это локация? Тоже хотелось бы там побывать.",
+  },
+  {
+    id: 6,
+    postId: 75,
+    username: "nature_lover",
+    email: "Presley.Mueller@myrl.com",
+    body: "Был там в прошлом году, энергетика у места потрясающая.",
+  },
+  {
+    id: 7,
+    postId: 38,
+    username: "bookworm",
+    email: "Dallas@ole.me",
+    body: "Книга действительно заставляет задуматься. Рекомендую к прочтению.",
+  },
+  {
+    id: 8,
+    postId: 24,
+    username: "critic_mike",
+    email: "Mallory_Kunze@marie.org",
+    body: "Слишком затянутый сюжет, на мой взгляд можно было сжать. Первая половина скучная.",
+  },
+  {
+    id: 9,
+    postId: 42,
+    username: "fitness_mom",
+    email: "Meghan_Littel@rene.us",
+    body: "Был там в прошлом году, энергетика у места потрясающая.Полезный комплекс упражнений, завтра же попробую на тренировке!Главное — следить за техникой выполнения, чтобы не травмировать спину и добиться наилучшего результата.",
+  },
+  {
+    id: 10,
+    postId: 12,
+    username: "coach_alex",
+    email: "Carmen_Keeling@caroline.name",
+    body: "Главное — следить за техникой выполнения, чтобы не травмировать спину и добиться наилучшего результата.",
+  }
+];
