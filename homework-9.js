@@ -1,8 +1,8 @@
 import { socialMediaComments } from "./comments.js";
 //Создали массив чисел от 1 до 10. Отфильтровли его таким образом, что мы получил массив чисел, начиная с 5.
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,]
-const numbers2 = numbers.slice(4,10)
-console.log(numbers2)
+const calculatenumbers = numbers.slice(4,10)
+console.log(calculatenumbers)
 
 //Создали массив строк, проверили и есть ли в массиве какая-то определенная сущность.
 const newBooks = [
@@ -17,7 +17,7 @@ console.log(isBookExists);
 
 //Написали функцию, которая аргументом принимает два вышеуказанных массива и изменяет их порядок на противоположный
 function reverseArrayPlace(m) {
-m.reverse();
+  m.reverse();
 }
 
 reverseArrayPlace(numbers, newBooks);
