@@ -1,7 +1,7 @@
 export const productCards = [
   {
     title: 'Увлажняющий мусс',
-    image: 'moisturizing-mousse.png',
+    image: 'moisturizing-mousse',
     skinType: 'для нормальной кожи',
     description: 'Глубоко увлажняют кожу лица, оставляя её мягкой и гладкой' ,
     ingredients: [
@@ -14,7 +14,7 @@ export const productCards = [
 
   {
     title: 'Увлажняющая маска',
-    image: 'moisturizing-mask.png',
+    image: 'moisturizing-mask',
     skinType: 'для нормальной кожи',
     description: 'Способствует удерживанию влаги в верхних слоях кожи',
     ingredients: [
@@ -27,7 +27,7 @@ export const productCards = [
   
   {
     title: 'Гель для умывания',
-    image: 'cleansing-gel.png',
+    image: 'cleansing-gel',
     skinType: 'для нормальной кожи',
     description: 'Интенсивно очищает, не повреждает защитный барьер кожи',
     ingredients: [
@@ -40,7 +40,7 @@ export const productCards = [
   
   {
     title: 'Подарочный набор №1',
-    image: 'gift-set-4.png',
+    image: 'gift-set-4',
     skinType: 'для нормальной кожи',
     description: 'Набор, состоящий из увлажняющего крема и маски',
     ingredients: [
@@ -53,7 +53,7 @@ export const productCards = [
   
   {
     title: 'Подарочный набор №5',
-    image: 'gift-set-5.png',
+    image: 'gift-set-5',
     skinType: 'для нормальной кожи',
     description: 'Весь набор средств Invisible symphony, крем, маска, мусс и гель для умывания',
     ingredients: [
