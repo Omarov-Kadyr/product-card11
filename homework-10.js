@@ -25,7 +25,7 @@ function renderProductCards(cardsArray) {
     cardCopy.querySelector('.card__text').textContent = product.description + '.';
     cardCopy.querySelector('.card__name').textContent = product.skinType;
     cardCopy.querySelector('.card__price span').innerHTML = `${product.price.toLocaleString('ru-RU')} ₽`;
-    cardCopy.querySelector('.card__image').src = `./img/${product.image}`;
+    cardCopy.querySelector('.card__image').src = `./img/${product.image}.png`;
     cardCopy.querySelector('.card__image').alt = product.title;
     const ingredientsList = cardCopy.querySelector('.card__list');
     product.ingredients.forEach((ingredient) => {
