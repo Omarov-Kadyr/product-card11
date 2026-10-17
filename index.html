@@ -1,4 +1,4 @@
- <!DOCTYPE html> 
+<!DOCTYPE html> 
 <html>
   <head>
     <meta charset="UTF-8"/>
@@ -38,6 +38,28 @@
       </template>
     </div>
     </main>
+    <footer>
+      <p>Что бы получать уведомления об обновлениях нашего товара, подпишись</p>
+      <form>
+        <input placeholder="Введите свой email" name="email" type="email" required>
+        <button type="submit">Подписаться</button>
+      </form>
+      <p>Что бы получить полный доступ к сайту пройдите регистрацию</p>
+      <button type="button">Зарегистрироваться</button>
+    </footer>
+    <div class="overlay modal-showed">
+      <div class="modal">
+        <form class="form" id="email-form">
+          <input placeholder="введите свое имя" name="name" required>
+          <input placeholder="Введите свою фамилию" name="surname" required>
+          <input placeholder="Введите свой email" name="email" type="email" required>
+          <input placeholder="Придумайте пароль" name="password" type="password">
+          <input placeholder="Подтвердите пароль" name="password" type="password">
+          <button type="submit">Регистрация</button>
+        </form>
+        <button class="close" type="button">Закрыть</button>
+      </div>
+    </div>
     <script src="main.js"></script>
     <script src="homework-7.js"></script>
     <script src="homework-8.js"></script>

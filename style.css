@@ -79,6 +79,26 @@ body {
   width: 340px;
 }
 
+.overlay {
+  background-color:rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
 
+.modal-showed {
+  display: flex;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  gap: 15px;
+}
 
 
