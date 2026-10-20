@@ -79,6 +79,45 @@ body {
   width: 340px;
 }
 
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 1000;
+}
+
+.overlay.overlay_showed {
+  display: block;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 420px;
+  max-width: 90%;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-sizing: border-box;
+  display: none;
+  z-index: 1001;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.modal.modal_showed {
+  display: block;
+}
+
+.form {
+  display: flex;
+  flex-direction: column; /* <-- ВОТ ИЗМЕНЕНИЕ: выстраивает поля Имя и Фамилия друг под другом */
+  width: 200px;
+  gap: 15px;
+}
+
 
 
 
