@@ -80,25 +80,36 @@ body {
 }
 
 .overlay {
-  background-color:rgba(0, 0, 0, 0.5);
   position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  z-index: 10;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
   display: none;
+  z-index: 1000;
 }
 
-.modal-showed {
-  display: flex;
+.overlay.overlay_showed {
+  display: block;
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-  gap: 15px;
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 420px;
+  max-width: 90%;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-sizing: border-box;
+  display: none;
+  z-index: 1001;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
+
+.modal.modal_showed {
+  display: block;
+}
+
 
 
