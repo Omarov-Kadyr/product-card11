@@ -111,5 +111,13 @@ body {
   display: block;
 }
 
+.form {
+  display: flex;
+  flex-direction: column; /* <-- ВОТ ИЗМЕНЕНИЕ: выстраивает поля Имя и Фамилия друг под другом */
+  width: 200px;
+  gap: 15px;
+}
+
+
 
 
