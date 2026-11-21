@@ -1,62 +1,66 @@
-const openRegistrationButton = document.querySelector(".open_registration");
-const overlay = document.querySelector(".overlay");
-const modal = document.querySelector(".modal");
-const modalCloseButton = document.querySelector(".modal_close");
+import Modal from './Modal.js';
+import Form from './Form.js';
 
-if (openRegistrationButton && modal && overlay) {
-  openRegistrationButton.addEventListener("click", () => {
-    modal.classList.add("modal_showed");
-    overlay.classList.add("overlay_showed");
+const registrationModal = new Modal('registration-modal');
+
+const openRegistrationButton = document.querySelector('.open_registration');
+const overlay = document.querySelector('.overlay');
+
+if (openRegistrationButton) {
+  openRegistrationButton.addEventListener('click', () => {
+    registrationModal.open();
   });
 }
 
-if (modalCloseButton && modal && overlay) {
-  modalCloseButton.addEventListener("click", () => {
-    modal.classList.remove("modal_showed");
-    overlay.classList.remove("overlay_showed");
+if (overlay) {
+  overlay.addEventListener('click', () => {
+    if (registrationModal.isOpen()) {
+      registrationModal.close();
+    }
   });
 }
 
-if (overlay && modal) {
-  overlay.addEventListener("click", () => {
-    modal.classList.remove("modal_showed");
-    overlay.classList.remove("overlay_showed");
-  });
-}
-
-modal.addEventListener("click", (event) => {
-  event.stopPropagation(); // Останавливает всплытие клика к overlay!
+registrationModal.modal.addEventListener('click', (event) => {
+  event.stopPropagation();
 });
 
-const emailForm = document.querySelector("#email-form");
+const registrationForm = new Form('email-form');
 
-if (emailForm) {
-  emailForm.addEventListener("submit", (event) => {
+if (registrationForm.form) {
+  registrationForm.form.addEventListener('submit', (event) => {
     event.preventDefault();
-    const form = event.target;
-    const formData = new FormData(form);
-    const data = Object.fromEntries(formData.entries());
-    if (data.password !== data.repeatPassword) {
-      alert("Пароли не совпадают");
+
+    if (!registrationForm.isValid()) {
       return;
     }
-    console.log("Данные регистрации сохранены:", data);
-    modal.classList.remove("modal_showed");
-    overlay.classList.remove("overlay_showed");
-    form.reset();
+
+    const data = registrationForm.getValues();
+
+    if (data.password !== data.repeatPassword) {
+      alert('Пароли не совпадают');
+      return;
+    }
+
+    console.log('Данные регистрации сохранены:', data);
+    registrationModal.close();
+    registrationForm.reset();
   });
 }
 
-const subscribeForm = document.querySelector("#subscribe-form");
+const subscribeForm = new Form('subscribe-form');
 
-if (subscribeForm) {
-  subscribeForm.addEventListener("submit", (event) => {
+if (subscribeForm.form) {
+  subscribeForm.form.addEventListener('submit', (event) => {
     event.preventDefault();
-    const form = event.target;
-    const formData = new FormData(form);
-    const data = Object.fromEntries(formData.entries());
-    console.log("Новая подписка на email:", data);
-    form.reset();
+
+    if (!subscribeForm.isValid()) {
+      return;
+    }
+
+    const data = subscribeForm.getValues();
+    console.log('Новая подписка на email:', data);
+    subscribeForm.reset();
   });
 }
+
 
